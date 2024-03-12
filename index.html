@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seesukamu </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>seesukamu</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#services">Layanan</a></li>
+                <li><a href="#booking">Pemesanan</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <div class="container">
+            <h2>Tentang Kami</h2>
+            <p>seesukamu adalah tempat yang sempurna untuk merawat kuku Anda. Kami berlokasi di pusat kota dengan jam operasional yang fleksibel.</p>
+            <p>Kami menyediakan berbagai layanan untuk kebutuhan perawatan kuku Anda, dengan hasil kerja yang memukau.</p>
+            <h3>Galeri Karya Kami</h3>
+            <div class="gallery">
+                <img src="image1.jpg" alt="seesukamu - Karya 1">
+                <img src="image2.jpg" alt="seesukamu - Karya 2">
+                <img src="image3.jpg" alt="seesukamu - Karya 3">
+            </div>
+            <h3>Testimoni Pelanggan</h3>
+            <blockquote>"Saya sangat puas dengan layanan dari seesukamu. Hasilnya sangat memuaskan!" - Maria</blockquote>
+            <blockquote>"Stafnya ramah dan profesional. Saya pasti akan kembali lagi!" - Lisa</blockquote>
+        </div>
+    </section>
+    <section id="services">
+        <div class="container">
+            <h2>Layanan Kami</h2>
+            <ul>
+                <li>
+                    <h3>Manikur</h3>
+                    <p>Manikur lengkap untuk merawat kuku Anda. Termasuk pemotongan, poles, dan perawatan kutikula.</p>
+                    <p>Harga: $25 | Durasi: 45 menit</p>
+                </li>
+                <li>
+                    <h3>Pedikur</h3>
+                    <p>Pedikur menyeluruh untuk kaki yang segar dan bersih. Termasuk perendaman, scrub, dan pijatan.</p>
+                    <p>Harga: $35 | Durasi: 60 menit</p>
+                </li>
+                <li>
+                    <h3>Perawatan Kuku Khusus</h3>
+                    <p>Perawatan khusus untuk kondisi kuku tertentu, seperti kuku rapuh atau kuku kering.</p>
+                    <p>Harga: $40 | Durasi: 60 menit</p>
+                </li>
+                <li>
+                    <h3>Desain Kuku Kreatif</h3>
+                    <p>Desain kreatif untuk menambahkan sentuhan spesial pada kuku Anda. Berbagai pilihan desain tersedia.</p>
+                    <p>Harga mulai dari $10, tergantung pada kompleksitas desain | Durasi: 30-60 menit</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="booking">
+        <div class="container">
+            <h2>Pemesanan</h2>
+            <p>Silakan isi formulir pemesanan di bawah ini untuk membuat janji.</p>
+            <form action="submit_booking.php" method="POST">
+                <label for="service">Pilih Layanan:</label>
+                <select name="service" id="service">
+                    <option value="manicure">Manikur</option>
+                    <option value="pedicure">Pedikur</option>
+                    <option value="special_treatment">Perawatan Kuku Khusus</option>
+                    <option value="creative_design">Desain Kuku Kreatif</option>
+                </select>
+                <label for="date">Tanggal:</label>
+                <input type="date" id="date" name="date">
+                <label for="time">Waktu:</label>
+                <input type="time" id="time" name="time">
+                <label for="staff">Pilih Staf:</label>
+                <select name="staff" id="staff">
+                    <option value="staff1">Staff 1</option>
+                    <option value="staff2">Staff 2</option>
+                    <option value="staff3">Staff 3</option>
+                </select>
+                <label for="notes">Catatan Tambahan:</label>
+                <textarea id="notes" name="notes" rows="4"></textarea>
+                <input type="checkbox" id="agree" name="agree">
+                <label for="agree">Saya setuju dengan Syarat dan Ketentuan.</label>
+                <button type="submit">Buat Janji</button>
+            </form>
+        </div>
+    </section>
+    <!-- Section for contact can be added here -->
+    <footer>
+        <p>&copy; 2024 seesukamu. All rights reserved.</p>
+    </footer>
+</body>
+</html>
